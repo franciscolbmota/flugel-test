@@ -1,6 +1,5 @@
 name: Flugel Unit Tests
 on: push
-branches: franciscolbmota-branch1
 jobs:
   go-tests:
     name: Run Flugel Go Unit Tests
