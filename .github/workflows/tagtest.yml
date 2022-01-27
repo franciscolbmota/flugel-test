@@ -15,10 +15,10 @@ jobs:
         with:
           terraform_version: 0.12.21
       - name: Download Go Modules
-        working-directory: franciscolbmota-branch1
+        working-directory: flugeltest
         run: go mod download
       - name: Run Go Tests
-        working-directory: franciscolbmota-branch1
+        working-directory: flugeltest
         run: go test -v -tags=unit
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
